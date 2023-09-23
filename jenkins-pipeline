@@ -13,15 +13,13 @@ stages {
 stage("clone"){
 
 
-         when {
-                branch 'production'
-            }
+         when { expression { param.branch == "production" }}
+
 	    steps {
 
 	sh 'echo "this is a pipeline"'
-
-	sh 'echo "$AWS"'
-}
+        sh 'echo "$AWS"'
+        }
 
 }
 }
