@@ -11,11 +11,12 @@ agent any
 stages {
 
 stage("clone"){
-steps {
+
 
          when {
                 branch 'production'
             }
+	    steps {
 
 	sh 'echo "this is a pipeline"'
 
