@@ -1,0 +1,58 @@
+			JENKINS
+			=======
+
+Jenkins is a continues Intergation tool (CI).
+How to install jenkins.
+
+Jenkins has a web archi (war).
+
+java -jar jenkins.war  
+
+java -jar jenkins.war
+
+It will request to install Plugins
+
+It will request to set username and password.
+
+How to integrate Git with jenkins. 
+How to write pipeline in jenkins.
+
+1) declarative pipeline.
+
+pipeline {
+
+              agent any
+	stages {
+
+                         stage('GitClone') {
+
+                                      steps {
+                                                     echo "This is Git clone"
+                                                     echo "2a49927a39654730a0525d8ad9e5cbd7"
+		}
+
+                          }
+
+
+	}
+                 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
