@@ -2,10 +2,21 @@ pipeline {
 
 agent any
 
+ parameters { 
+
+     string(name: 'branch', defaultValue: 'staging', description: '' ) 
+
+   }
+
 stages {
 
 stage("clone"){
 steps {
+
+         when {
+                branch 'production'
+            }
+
 	sh 'echo "this is a pipeline"'
 
 	sh 'echo "$AWS"'
