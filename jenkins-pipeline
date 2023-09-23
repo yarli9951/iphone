@@ -1,0 +1,20 @@
+pipeline {
+
+agent Any
+
+stages {
+
+stage("clone"){
+steps {
+	sh 'echo "this is a pipeline"'
+
+
+}
+
+}
+}
+
+
+
+
+}
