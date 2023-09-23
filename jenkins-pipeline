@@ -8,7 +8,7 @@ stage("clone"){
 steps {
 	sh 'echo "this is a pipeline"'
 
-
+	sh 'echo "$AWS"'
 }
 
 }
